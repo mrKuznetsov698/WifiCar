@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    border-radius: 15px;
+    background-color: #222;
+    padding: 15px;
+}
+
+.slider {
+    border-radius: 15px;
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
+    color: rgb(81 173 81);
+}
+
+input[type="range"] {
+    accent-color: rgb(81 173 81);
+}
+
+.button {
+    background-color: rgb(81 173 81);
+    border-radius: 10px;
+    font-size: 100px;
+    text-align: center;
+    color: #fff;
+    transition: 0.75s;
+}
+
+span {
+    position: relative;
+    bottom: 4px;
+    left: 4px;
+}
+
+.button.ur i {
+    transform: rotate(45deg);
+}
+
+.button.ul i {
+    transform: rotate(-45deg);
+}
+
+.button.dl i {
+    transform: rotate(45deg);
+}
+
+.button.dr i {
+    transform: rotate(-45deg);
+}
+
+.button:active  {
+    opacity: 70%;
+}
+
+[class*="active"] {
+    opacity: 70%;
+}
